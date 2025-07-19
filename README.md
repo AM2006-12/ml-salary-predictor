@@ -1,67 +1,42 @@
-# 💼 AI-Powered Salary Prediction Web App
+Salary Prediction Web App
+A web application that predicts employee salaries based on personal and professional factors like age, gender, education, job title, and experience.
+This project combines machine learning with an easy-to-use interface to help understand salary trends and make data-driven compensation decisions.
+What it does
 
-Welcome to the **AI Salary Predictor** – an intelligent web application that estimates employee salaries based on key factors such as age, gender, education level, job title, and years of experience.
+Real-time predictions: Enter your details and get an instant salary estimate
+Machine learning backend: Uses a trained model that achieved 91% accuracy (R² score) with RMSE of ₹15,616
+Clean interface: Built with Streamlit for a straightforward user experience
+Real data: Model trained on actual salary data from Kaggle
 
-> 🎯 Built using **Python, Streamlit, and Machine Learning**, this project aims to bridge data and decision-making with ease and accuracy.
+Model Performance
+MetricValueMean Squared Error243,880,416.72Root Mean Squared Error₹15,616.67R² Score0.91
+Tech Stack
 
----
+Python 3.10+
+Streamlit (web interface)
+Scikit-learn (machine learning)
+Pandas & NumPy (data processing)
+Joblib (model persistence)
 
-## 🚀 Features
+How it works
+The app takes five inputs from users:
 
-- 🔍 **Instant Salary Prediction**  
-  Upload details like age, education, job title, and more to get real-time salary estimations.
+Age
+Gender
+Education level
+Job title
+Years of experience
 
-- 🤖 **Trained ML Pipeline**  
-  Powered by a highly optimized machine learning model with:
-  - ✅ **R² Score**: 0.91 (Excellent performance)
-  - ✅ **RMSE**: ₹15,616.67
+These details are fed into a pre-trained machine learning pipeline (salary_prediction_pipeline.pkl) that outputs a salary prediction in Indian Rupees.
+Running locally
+Clone this repository:
+bashgit clone https://github.com/yourusername/salary-prediction-app.git
+cd salary-prediction-app
 
-- 📦 **Interactive Web UI**  
-  Built using **Streamlit**, offering a clean and intuitive user interface.
+The main changes I made:
 
-- 💾 **Model Trained on Kaggle Dataset**  
-  Uses real-world data to deliver accurate predictions.
-
----
-
-## 📊 Model Performance
-
-| Metric | Value |
-|--------|--------|
-| **Mean Squared Error (MSE)** | 243,880,416.72 |
-| **Root Mean Squared Error (RMSE)** | ₹15,616.67 |
-| **R-squared (R² Score)** | 0.91 |
-
----
-
-## 🧠 Technologies Used
-
-- **Python 3.10+**
-- **Streamlit**
-- **Scikit-learn**
-- **Pandas, NumPy**
-- **Joblib** for model saving/loading
-
----
-
-## 💡 How It Works
-
-1. User inputs:
-   - Age
-   - Gender
-   - Education Level
-   - Job Title
-   - Years of Experience
-
-2. The input is passed to a **trained ML pipeline** (`salary_prediction_pipeline.pkl`).
-
-3. The model outputs an estimated **salary (in INR ₹)** based on historical trends.
-
----
-
-## 🛠 How to Run Locally
-
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/yourusername/salary-prediction-app.git
-   cd salary-prediction-app
+Removed excessive emojis and marketing language
+Made the tone more conversational and less promotional
+Simplified the structure while keeping all important information
+Used more natural phrasing throughout
+Reduced the "sales pitch" feel while maintaining technical accuracy
